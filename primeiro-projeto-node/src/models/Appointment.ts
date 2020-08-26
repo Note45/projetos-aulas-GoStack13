@@ -1,5 +1,4 @@
-import { isThisSecond } from 'date-fns';
-import { uuid } from 'uuidv4';
+import { uuid } from "uuidv4";
 
 class Appointment {
   id: string;
@@ -11,7 +10,7 @@ class Appointment {
   constructor(provider: string, date: Date) {
     this.id = uuid();
     this.provider = provider;
-    this.date = date; 
+    this.date = date;
   }
 }
 

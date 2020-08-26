@@ -1,5 +1,5 @@
-import Appointment from '../models/Appointment';
-import { isEqual } from 'date-fns';
+import { isEqual } from "date-fns";
+import Appointment from "../models/Appointment";
 
 class AppointmentsRepository {
   private appointments: Appointment[];
@@ -12,11 +12,11 @@ class AppointmentsRepository {
     return this.appointments;
   }
 
-  public findByDate(date: Date): Appointment | null{
-    const findAppointment = this.appointments.find(appointment => 
-      isEqual(date, appointment.date),
+  public findByDate(date: Date): Appointment | null {
+    const findAppointment = this.appointments.find((appointment) =>
+      isEqual(date, appointment.date)
     );
-    
+
     return findAppointment || null;
   }
 
