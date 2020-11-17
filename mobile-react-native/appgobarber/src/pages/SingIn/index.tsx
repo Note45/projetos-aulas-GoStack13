@@ -15,11 +15,17 @@ const SingIn: React.FC = () => {
 
       <Title>Faça seu logon</Title>
 
-      <Input />
+      <Input name="email" icon="mail" placeholder="Email" />
 
-      <Input />
+      <Input name="password" icon="lock" placeholder="Senha" />
 
-      <Button onPress={() => {}}>Entrar</Button>
+      <Button
+        onPress={() => {
+          console.log('Press button');
+        }}
+      >
+        Entrar
+      </Button>
     </Container>
   );
 };
