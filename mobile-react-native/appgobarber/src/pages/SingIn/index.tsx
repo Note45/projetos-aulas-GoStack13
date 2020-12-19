@@ -44,9 +44,7 @@ const SingIn: React.FC = () => {
   const passwordInputRef = useRef<TextInput>(null);
   const navigation = useNavigation();
 
-  const { signIn, user } = useAuth();
-
-  console.log(user);
+  const { signIn } = useAuth();
 
   const handleSingIn = useCallback(
     async (data: SignInFormData) => {
