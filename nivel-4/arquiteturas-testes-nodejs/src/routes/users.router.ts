@@ -2,8 +2,8 @@ import { Router } from "express";
 import multer from "multer";
 import upladConfig from "../config/upload";
 
-import CreateUserService from "../services/CreateUserService";
-import UpdatedUserAvatarService from "../services/UpdatedUserAvatarService";
+import CreateUserService from "../modules/users/services/CreateUserService";
+import UpdatedUserAvatarService from "../modules/users/services/UpdatedUserAvatarService";
 
 import ensureAuthenticated from "../middlewares/ensureAuthenticated";
 
