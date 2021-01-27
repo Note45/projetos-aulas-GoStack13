@@ -5,7 +5,7 @@ import authConfig from "../../../config/auth";
 
 import AppError from "../../../shared/errors/AppError";
 
-import User from "../../../models/User";
+import User from "../entities/User";
 
 interface Request {
   email: string;
