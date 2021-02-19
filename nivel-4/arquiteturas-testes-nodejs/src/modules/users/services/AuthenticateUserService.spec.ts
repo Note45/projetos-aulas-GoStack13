@@ -1,13 +1,22 @@
 import AppError from "@shared/errors/AppError";
 import FakeUserRepository from "../repositories/fakes/FakeUserRepository";
+import FakeHashProvider from "../providers/HashProvider/fakes/FakeHashProvider";
 import AuthenticateUserService from "./AuthenticateUserService";
 import CreateUserService from "./CreateUserService";
 
 describe("CreateUser", () => {
   it("should be able to authenticate", async () => {
     const fakeUserRepository = new FakeUserRepository();
-    const authenticateUser = new AuthenticateUserService(fakeUserRepository);
-    const createUser = new CreateUserService(fakeUserRepository);
+    const fakeHashProvider = new FakeHashProvider();
+
+    const authenticateUser = new AuthenticateUserService(
+      fakeUserRepository,
+      fakeHashProvider
+    );
+    const createUser = new CreateUserService(
+      fakeUserRepository,
+      fakeHashProvider
+    );
 
     await createUser.execute({
       name: "teste do testa",
