@@ -1,6 +1,5 @@
 import { getRepository, Repository } from "typeorm";
 
-import ICreateUserDTO from "../../../dtos/ICreateUserDTO";
 import IUsersTokenRepository from "../../../repositories/IUserTokenRepository";
 
 import UserToken from "../entities/UserToken";
