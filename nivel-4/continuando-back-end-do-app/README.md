@@ -59,6 +59,7 @@
 
 - A listagem de prestadores deve ser armazenado em cache;
 
+
 **RN**
 
 - Cada agendamento deve durar 1h exatamente;
