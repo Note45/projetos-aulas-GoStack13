@@ -1,4 +1,4 @@
-#Sun Jun 27 16:56:48 BRT 2021
+#Mon Jul 19 17:33:46 BRT 2021
 base.0=/home/ghost/Documents/repositorios-git/projetos-aulas-GoStack13/nivel-5/finalizando-front-end-mobile/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
